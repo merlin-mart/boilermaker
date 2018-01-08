@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
 import {withRouter, Link} from 'react-router-dom'
 import {logout} from '../store'
-
+import Button from './button'
 /**
  * COMPONENT
  *  The Main component is our 'picture frame' - it displays the navbar and anything
@@ -26,7 +26,7 @@ const Main = (props) => {
             </div>
             : <div>
               {/* The navbar will show these links before you log in */}
-              <Link to="/login">Login</Link>
+              <Button />
               <Link to="/signup">Sign Up</Link>
             </div>
         }
